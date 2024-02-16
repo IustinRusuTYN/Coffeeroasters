@@ -1,0 +1,404 @@
+@import "./global.css";
+
+:root {
+  --highlight__bg--1: #fdd6ba;
+}
+
+:root {
+  --hero__txt--1: #fefcf7;
+  --packs__txt--2: #333d4b;
+  --packs__txt--3: #83888f;
+  --why__txt--4: #fefcf7;
+  --why__bg--5: #2a313a;
+  --why__bg--6: #0e8784;
+  --how__txt--7: #83888f;
+  --how__border__top--8: #fdd6ba;
+  --how__border--9: #0e8784;
+  --how__txt--10: #fdd6ba;
+}
+
+.hero {
+  min-height: 600px;
+  background: url("../images/hero.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  color: var(--hero__txt--1);
+  margin-top: 2rem;
+}
+.hero div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 2rem;
+}
+.hero h2 {
+  font-family: var(--fraunces-font);
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 72px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.hero p {
+  font-family: var(--barlow-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.packs {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 6rem 1rem;
+}
+.packs .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 255px);
+  gap: 1.5rem;
+}
+.packs .cards .card {
+  font-family: var(--fraunces-font);
+  text-align: center;
+  color: var(--packs__txt--2);
+  display: grid;
+  gap: 2rem;
+}
+.packs .cards .card.highlight {
+  background-color: var(--highlight__bg--1);
+}
+.packs .cards .card h3 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.packs .cards .card p {
+  font-family: var(--barlow-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.packs .cards .card img {
+  margin: auto;
+  transition: transform 0.3s ease;
+}
+.packs .cards .card img .hover-animation {
+  transform: scale(1.05);
+}
+.packs .backdrop {
+  z-index: -1;
+  position: relative;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+.packs .backdrop b {
+  color: var(--packs__txt--3);
+  font-family: var(--fraunces-font);
+  font-size: 11rem;
+  font-weight: 900;
+  line-height: 72px;
+  letter-spacing: 0px;
+}
+.packs .backdrop img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.why {
+  border-radius: 10px;
+  padding: 6rem 3rem 0 3rem;
+  color: var(--why__txt--4);
+  display: grid;
+  gap: 4rem;
+  position: relative;
+}
+.why .bg {
+  background-color: var(--why__bg--5);
+  position: absolute;
+  border-radius: 10px;
+  height: 75%;
+  width: 100%;
+  z-index: -1;
+}
+.why .header {
+  max-width: 540px;
+  margin: auto;
+}
+.why .header h3 {
+  font-family: var(--fraunces-font);
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.why .header p {
+  font-family: var(--barlow-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.why .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  justify-content: space-between;
+}
+.why .cards .card {
+  background: var(--why__bg--6);
+  padding: 4rem 2rem;
+  border-radius: 5px;
+  display: grid;
+  gap: 3rem;
+  justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.why .cards .card img {
+  width: 71px;
+  margin: auto;
+}
+.why .cards .card .texts {
+  display: grid;
+  gap: 1rem;
+}
+.why .cards .card .texts h4 {
+  font-family: var(--fraunces-font);
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.why .cards .card .texts p {
+  font-family: var(--barlow-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.how {
+  margin-top: 30px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 5rem;
+}
+.how .title {
+  color: var(--how__txt--7);
+  font-family: var(--fraunces-font);
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.how .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.how .cards .card {
+  position: relative;
+  padding: 5rem 3rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.how .cards .card:nth-child(1) {
+  border-top: 2px solid var(--how__border__top--8);
+}
+.how .cards .card:nth-child(2) {
+  border-top: 2px solid var(--how__border__top--8);
+}
+.how .cards .card::before {
+  content: "";
+  width: 31px;
+  height: 31px;
+  border: 2px solid var(--how__border--9);
+  position: absolute;
+  top: -17px;
+  left: 0;
+  border-radius: 100%;
+  background: var(--hero__txt--1);
+}
+.how .cards .card h3 {
+  font-family: var(--fraunces-font);
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 72px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--how__txt--10);
+}
+.how .cards .card h4 {
+  font-family: var(--fraunces-font);
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.how .cards .card p {
+  font-family: var(--barlow-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .hero h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .packs .cards {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+  .packs .cards .card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .packs .cards .card img {
+    width: 255px;
+  }
+  .packs .cards .card p {
+    text-align: left;
+  }
+  .packs .cards .card h3 {
+    text-align: left;
+  }
+  .packs .backdrop b {
+    font-size: 6rem;
+  }
+  .why {
+    max-height: 700px;
+  }
+  .why .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .why .cards .card {
+    display: flex;
+    padding: 2rem;
+  }
+  .why .cards .card .texts {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .why .cards .card .texts p {
+    text-align: left;
+  }
+  .how {
+    margin-top: 450px;
+  }
+  .how .cards .card h4 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 500px) {
+  .hero {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-height: 450px;
+  }
+  .hero div {
+    width: auto;
+    align-items: center;
+  }
+  .hero h2 {
+    text-align: center;
+    font-size: 28px;
+  }
+  .hero p {
+    text-align: center;
+  }
+  .packs .cards .card {
+    flex-direction: column;
+  }
+  .packs .cards .card p {
+    text-align: center;
+  }
+  .packs .cards .card h3 {
+    text-align: center;
+  }
+  .packs .backdrop b {
+    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+  .why {
+    max-height: 1000px;
+    padding: 6rem 1rem 0 1rem;
+  }
+  .why .cards .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .why .cards .card .texts {
+    align-items: center;
+  }
+  .why .cards .card .texts p {
+    text-align: center;
+  }
+  .why .bg {
+    height: 92%;
+  }
+  .how {
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+  .how .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 3rem;
+  }
+  .how .cards .card {
+    border: none !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .how .cards .card::before {
+    display: none;
+  }
+  .how .cards .card h3 {
+    text-align: center;
+  }
+  .how .cards .card p {
+    text-align: center;
+  }
+  .how .cards .card h4 {
+    text-align: center;
+  }
+  .how .title {
+    text-align: center;
+  }
+} /*# sourceMappingURL=home.css.map */

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscribe</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/subscribe.css" />
+    <script src="./js/accordions.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/search.js"></script>
+  </head>
+
+  <body>
+    <div class="modal">
+      <div class="inner-container">
+        <div class="content">
+          <div class="header">
+            <h2>Order Summary</h2>
+          </div>
+          <div class="body">
+            <q
+              >I drink my coffee as <span class="green" id="m1">Filter</span>,
+              with a <span class="green" id="m2">Decaf</span> type of bean.
+              <span class="green" id="m3">250g</span> ground ala
+              <span class="green" id="m4">Cafetiére</span>, sent to me
+              <span class="green" id="m5">Every Week</span>.</q
+            >
+            <small
+              >Is this correct? You can proceed to checkout or go back to plan
+              selection if something is off. Subscription discount codes can
+              also be redeemed at the checkout.
+            </small>
+            <div class="price">
+              <h3>$14.00 / mo</h3>
+              <button class="checkout">checkout</button>
+            </div>
+            <div class="price mobile">
+              <button class="checkout">Checkout - $14.00 / mo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <nav>
+        <a href="index.html" class="base_link">
+          <img loading="lazy" src="./images/logo.png" alt="logo" />
+          coffeeroaster
+        </a>
+        <ul class="desktop">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="about.html">about us</a>
+          </li>
+          <li>
+            <a href="subscribe.html">create your plan</a>
+          </li>
+          <li>
+            <input type="text" placeholder="Search..." class="search-input" />
+          </li>
+          <li>
+            <a href="./signin.html" class="login-btn">Login</a>
+          </li>
+          <li>
+            <a href="./signin.html?action=register" class="register-btn"
+              >Register</a
+            >
+          </li>
+        </ul>
+        <div class="open-menu">
+          <span class="material-symbols-outlined" id="open"> menu </span>
+          <span class="material-symbols-outlined hidden" id="close">
+            close
+          </span>
+        </div>
+
+        <div class="mobile">
+          <ul>
+            <li>
+              <a href="index.html">home</a>
+            </li>
+            <li>
+              <a href="about.html">about us</a>
+            </li>
+            <li>
+              <a href="subscribe.html">create your plan</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="hero">
+        <div>
+          <h2>Create plan</h2>
+          <p>
+            Coffee the way you wanted it to be. For coffee delivered tomorrow,
+            or next week. For whatever brew method you use. For choice, for
+            convenience, for quality.
+          </p>
+        </div>
+      </section>
+      <section class="how">
+        <div class="inner-container">
+          <div class="cards">
+            <div class="card">
+              <h3>01</h3>
+              <h4>Pick your coffee</h4>
+              <p>
+                Select from our evolving range of artisan coffees. Our beans are
+                ethically sourced and we pay fair prices for them. There are new
+                coffees in all profiles every month for you to try out.
+              </p>
+            </div>
+            <div class="card">
+              <h3>02</h3>
+              <h4>Choose the frequency</h4>
+              <p>
+                Customize your order frequency, quantity, even your roast style
+                and grind type. Pause, skip or cancel your subscription with no
+                commitment through our online portal.
+              </p>
+            </div>
+            <div class="card">
+              <h3>03</h3>
+              <h4>Receive and enjoy!</h4>
+              <p>
+                We ship your package within 48 hours, freshly roasted. Sit back
+                and enjoy award-winning world-class coffees curated to provide a
+                distinct tasting experience.
+              </p>
+            </div>
+          </div>
+          <a class="action" href="./subscribe.html#create-plan">
+            Create your plan
+          </a>
+        </div>
+      </section>
+
+      <section class="accords-container">
+        <ul class="navs">
+          <li class="active" data-n="1">
+            <span class="number">01</span>
+            <span class="text">Preferences</span>
+          </li>
+          <li data-n="2">
+            <span class="number">02</span>
+            <span class="text">Bean Type</span>
+          </li>
+          <li data-n="3">
+            <span class="number">03</span>
+            <span class="text">Quantity</span>
+          </li>
+          <li data-n="4">
+            <span class="number">04</span>
+            <span class="text">Grind Option</span>
+          </li>
+          <li data-n="5">
+            <span class="number">05</span>
+            <span class="text">Deliveries</span>
+          </li>
+        </ul>
+        <div class="accs">
+          <div class="acc" data-n="1">
+            <div class="dropdown">
+              <h3>How do you drink your coffee?</h3>
+              <img loading="lazy" src="./images/arrow.svg" class="rotate" />
+            </div>
+            <div class="hidden">
+              <div class="cards" id="choise_1">
+                <div class="card">
+                  <h4>Capsule</h4>
+                  <p>Compatible with Nespresso systems and similar brewers</p>
+                </div>
+                <div class="card">
+                  <h4>Filter</h4>
+                  <p>
+                    For pour over or drip methods like Aeropress, Chemex, and
+                    V60
+                  </p>
+                </div>
+                <div class="card">
+                  <h4>Espresso</h4>
+                  <p>
+                    Dense and finely ground beans for an intense, flavorful
+                    experience
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="acc" data-n="2">
+            <div class="dropdown">
+              <h3>What type of coffee?</h3>
+              <img loading="lazy" src="./images/arrow.svg" class="rotate" />
+            </div>
+            <div class="hidden">
+              <div class="cards" id="choise_2">
+                <div class="card">
+                  <h4>Single Origin</h4>
+                  <p>
+                    Distinct, high quality coffee from a specific family-owned
+                    farm
+                  </p>
+                </div>
+                <div class="card">
+                  <h4>Decaf</h4>
+                  <p>
+                    Just like regular coffee, except the caffeine has been
+                    removed
+                  </p>
+                </div>
+                <div class="card">
+                  <h4>Blended</h4>
+                  <p>
+                    Combination of two or three dark roasted beans of organic
+                    coffees
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="acc" data-n="3">
+            <div class="dropdown">
+              <h3>How much would you like?</h3>
+              <img loading="lazy" src="./images/arrow.svg" class="rotate" />
+            </div>
+            <div class="hidden">
+              <div class="cards" id="choise_3">
+                <div class="card">
+                  <h4>250g</h4>
+                  <p>
+                    Perfect for the solo drinker. Yields about 12 delicious
+                    cups.
+                  </p>
+                </div>
+                <div class="card">
+                  <h4>500g</h4>
+                  <p>
+                    Perfect option for a couple. Yields about 40 delectable
+                    cups.
+                  </p>
+                </div>
+                <div class="card">
+                  <h4>1000g</h4>
+                  <p>
+                    Perfect for offices and events. Yields about 90 delightful
+                    cups.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="acc" data-n="4">
+            <div class="dropdown">
+              <h3>How much would you like?</h3>
+              <img loading="lazy" src="./images/arrow.svg" class="rotate" />
+            </div>
+            <div class="hidden">
+              <div class="cards" id="choise_4">
+                <div class="card">
+                  <h4>Wholebean</h4>
+                  <p>Best choice if you cherish the full sensory experience</p>
+                </div>
+                <div class="card">
+                  <h4>Filter</h4>
+                  <p>
+                    For drip or pour-over coffee methods such as V60 or
+                    Aeropress
+                  </p>
+                </div>
+                <div class="card">
+                  <h4>Cafetiére</h4>
+                  <p>
+                    Course ground beans specially suited for french press coffee
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="acc" data-n="5">
+            <div class="dropdown">
+              <h3>How much would you like?</h3>
+              <img loading="lazy" src="./images/arrow.svg" class="rotate" />
+            </div>
+            <div class="hidden">
+              <div class="cards" id="choise_5">
+                <div class="card">
+                  <h4>Every week</h4>
+                  <p>$7.20 per shipment. Includes free first-class shipping.</p>
+                </div>
+                <div class="card">
+                  <h4>Every 2 weeks</h4>
+                  <p>$9.60 per shipment. Includes free priority shipping.</p>
+                </div>
+                <div class="card">
+                  <h4>Every month</h4>
+                  <p>$12.00 per shipment. Includes free priority shipping.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <div>
+              <p>Order Summary</p>
+              <h3>
+                “I drink my coffee as <span class="green" id="a1">Filter</span>,
+                with a <span class="green" id="a2">Decaf</span> type of bean.
+                <span class="green" id="a3">250g</span> ground ala
+                <span class="green" id="a4">Cafetiare</span>, sent to me
+                <span class="green" id="a5">Every Week</span>.”
+              </h3>
+            </div>
+            <button class="action" id="create">Create my plan!</button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <nav>
+          <a href="" class="base_link">
+            <img loading="lazy" src="./images/logo.png" alt="logo" />
+            coffeeroaster
+          </a>
+          <ul>
+            <li>
+              <a href="index.html">home</a>
+            </li>
+            <li>
+              <a href="about.html">about us</a>
+            </li>
+            <li>
+              <a href="subscribe.html">create your plan</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="socials">
+          <a href="https://www.google.ro/">
+            <i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="https://www.google.ro/"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://www.google.ro/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

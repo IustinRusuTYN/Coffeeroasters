@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <script src="./js/nav.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/products-anim.js"></script>
+  </head>
+
+  <body>
+    <div class="modal">
+      <div class="inner-container">
+        <div class="content">
+          <div class="header">
+            <h2>Order Summary</h2>
+          </div>
+          <div class="body">
+            <q
+              >I drink my coffee as <span class="green">Filter</span>, with a
+              <span class="green">Decaf</span> type of bean.
+              <span class="green">250g</span> ground ala
+              <span class="green">Cafetiére</span>, sent to me
+              <span class="green">Every Week</span>.</q
+            >
+            <small
+              >Is this correct? You can proceed to checkout or go back to plan
+              selection if something is off. Subscription discount codes can
+              also be redeemed at the checkout.
+            </small>
+            <div class="price">
+              <h3>$14.00 / mo</h3>
+              <button class="checkout">checkout</button>
+            </div>
+            <div class="price mobile">
+              <button class="checkout">Checkout - $14.00 / mo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <nav>
+        <a href="index.html" class="base_link">
+          <img loading="lazy" src="./images/logo.png" alt="logo" />
+          coffeeroaster
+        </a>
+        <ul class="desktop">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="about.html">about us</a>
+          </li>
+          <li>
+            <a href="subscribe.html">create your plan</a>
+          </li>
+          <li>
+            <input type="text" placeholder="Search..." class="search-input" />
+          </li>
+          <li>
+            <a href="./signin.html" class="login-btn">Login</a>
+          </li>
+          <li>
+            <a href="./signin.html?action=register" class="register-btn"
+              >Register</a
+            >
+          </li>
+        </ul>
+        <div class="open-menu">
+          <span class="material-symbols-outlined" id="open"> menu </span>
+          <span class="material-symbols-outlined hidden" id="close">
+            close
+          </span>
+        </div>
+
+        <div class="mobile">
+          <ul>
+            <li>
+              <a href="index.html">home</a>
+            </li>
+            <li>
+              <a href="about.html">about us</a>
+            </li>
+            <li>
+              <a href="subscribe.html">create your plan</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="hero">
+        <div>
+          <h2>
+            Great coffee
+            <br />
+            made simple.
+          </h2>
+          <p>
+            Start your mornings with the world's best coffees. Try our expertly
+            curated artisan coffees from our best roasters delivered directly to
+            your door, at your schedule.
+          </p>
+          <button class="action">Create your plan</button>
+        </div>
+      </section>
+
+      <section class="packs">
+        <div class="backdrop">
+          <b>our collection</b>
+          <img loading="lazy" src="./images/fade.png" />
+        </div>
+        <div class="cards">
+          <div class="card">
+            <img loading="lazy" src="./images/p1.png" alt="coffee" />
+            <div>
+              <h3>Gran Espresso</h3>
+              <p>
+                Light and flavorful blend with cocoa and black pepper for an
+                intense experience
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img loading="lazy" src="./images/p2.png" alt="coffee" />
+            <div>
+              <h3>Planalto</h3>
+              <p>
+                Brazilian dark roast with rich and velvety body, and hints of
+                fruits and nuts
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img loading="lazy" src="./images/p3.png" alt="coffee" />
+            <div>
+              <h3>Piccollo</h3>
+              <p>
+                Mild and smooth blend featuring notes of toasted almond and
+                dried cherry
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img loading="lazy" src="./images/p4.png" alt="coffee" />
+            <div>
+              <h3>Danche</h3>
+              <p>
+                Ethiopian hand-harvested blend densely packed with vibrant fruit
+                notes
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why">
+        <div class="header">
+          <h3>Why choose us?</h3>
+          <p>
+            A large part of our role is choosing which particular coffees will
+            be featured in our range. This means working closely with the best
+            coffee growers to give you a more impactful experience on every
+            level.
+          </p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <img loading="lazy" src="./images/1.svg" />
+            <div class="texts">
+              <h4>Best quality</h4>
+              <p>
+                Discover an endless variety of the world's best artisan coffee
+                from each of our roasters.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img loading="lazy" src="./images/2.svg" />
+            <div class="texts">
+              <h4>Exclusive benefits</h4>
+              <p>
+                Special offers and swag when you subscribe, including 30% off
+                your first shipment.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img loading="lazy" src="./images/3.svg" />
+            <div class="texts">
+              <h4>Free shipping</h4>
+              <p>
+                We cover the cost and coffee is delivered fast. Peak freshness:
+                guaranteed.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg"></div>
+      </section>
+
+      <section class="how">
+        <h3 class="title">How it works</h3>
+        <div class="cards">
+          <div class="card">
+            <h3>01</h3>
+            <h4>Pick your coffee</h4>
+            <p>
+              Select from our evolving range of artisan coffees. Our beans are
+              ethically sourced and we pay fair prices for them. There are new
+              coffees in all profiles every month for you to try out.
+            </p>
+          </div>
+          <div class="card">
+            <h3>02</h3>
+            <h4>Choose the frequency</h4>
+            <p>
+              Customize your order frequency, quantity, even your roast style
+              and grind type. Pause, skip or cancel your subscription with no
+              commitment through our online portal.
+            </p>
+          </div>
+          <div class="card">
+            <h3>03</h3>
+            <h4>Receive and enjoy!</h4>
+            <p>
+              We ship your package within 48 hours, freshly roasted. Sit back
+              and enjoy award-winning world-class coffees curated to provide a
+              distinct tasting experience.
+            </p>
+          </div>
+        </div>
+        <button class="action">Create your plan</button>
+      </section>
+
+      <footer class="footer">
+        <nav>
+          <a href="" class="base_link">
+            <img loading="lazy" src="./images/logo.png" alt="logo" />
+            coffeeroaster
+          </a>
+          <ul>
+            <li>
+              <a href="index.html">home</a>
+            </li>
+            <li>
+              <a href="about.html">about us</a>
+            </li>
+            <li>
+              <a href="subscribe.html">create your plan</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="socials">
+          <a href="https://www.google.ro/">
+            <i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="https://www.google.ro/"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://www.google.ro/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
