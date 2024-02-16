@@ -1,5 +1,4 @@
 @import "./global.css";
-
 :root {
   --highlight__bg--1: #fdd6ba;
 }
@@ -401,4 +400,5 @@
   .how .title {
     text-align: center;
   }
-} /*# sourceMappingURL=home.css.map */
+}
+/* test *//*# sourceMappingURL=home.css.map */

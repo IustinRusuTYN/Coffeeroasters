@@ -33,8 +33,7 @@ body {
   margin: 0 auto 100px;
   padding: 45px;
   text-align: center;
-  box-shadow: 0 0 20px 0 var(--form__box__shadow--4),
-    0 5px 5px 0 var(--form__box__shadow--5);
+  box-shadow: 0 0 20px 0 var(--form__box__shadow--4), 0 5px 5px 0 var(--form__box__shadow--5);
 }
 .login-page .form input {
   font-family: "Barlow", sans-serif;
@@ -123,4 +122,6 @@ body {
 }
 .container .info span .fa {
   color: var(--fa__txt--11);
-} /*# sourceMappingURL=signin.css.map */
+}
+
+/* test *//*# sourceMappingURL=signin.css.map */
