@@ -12,23 +12,93 @@
   </head>
   <body>
     <form id="checkout-form">
+      <a href="index.html" class="base_link">
+        <img loading="lazy" src="./images/logo.png" alt="logo" />
+        coffeeroaster
+      </a>
       <label for="first-name">First Name:</label>
-      <input type="text" id="first-name" name="first-name" required />
+      <input
+        type="text"
+        id="first-name"
+        name="first-name"
+        required
+        placeholder="Enter your first name"
+        maxlength="35"
+      />
 
       <label for="last-name">Last Name:</label>
-      <input type="text" id="last-name" name="last-name" required />
+      <input
+        type="text"
+        id="last-name"
+        name="last-name"
+        required
+        placeholder="Enter your last name"
+        maxlength="35"
+      />
 
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="Enter your email address"
+        maxlength="35"
+      />
+
+      <label for="city">City:</label>
+      <input
+        type="text"
+        id="city"
+        name="city"
+        required
+        placeholder="Enter your city"
+        maxlength="35"
+      />
 
       <label for="address">Address:</label>
-      <input type="text" id="address" name="address" required />
+      <input
+        type="text"
+        id="address"
+        name="address"
+        required
+        placeholder="Enter your address"
+        maxlength="35"
+      />
 
       <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="phone" required />
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        required
+        placeholder="Enter your phone number"
+        pattern="[0-9]+"
+        title="Please enter only digits (0-9)"
+        maxlength="40"
+      />
 
-      <button type="submit">Submit</button>
+      <label>
+        <input type="checkbox" name="shipping-same-as-billing" />
+        Shipping address is the same as my billing address
+      </label>
+
+      <label>
+        <input type="checkbox" name="save-for-next-time" />
+        Save this information for next time
+      </label>
+
+      <button type="submit" id="submit-button" disabled>Submit</button>
     </form>
+
+    <footer class="copyright">
+      <p class="mb-1">&copy; 2017-2024 Coffeeroasters</p>
+      <ul class="footer-list">
+        <li class="privacy"><a href="#">Privacy</a></li>
+        <li class="terms"><a href="#">Terms</a></li>
+        <li class="support"><a href="#">Support</a></li>
+      </ul>
+    </footer>
 
     <script src="./js/checkout.js"></script>
   </body>

@@ -1,4 +1,12 @@
 @import url("./global.css");
+:root {
+  --form__bg--1: #2c343e;
+  --base_link__txt--2: #ffffff;
+  --label__txt--3: #83888f;
+  --tel__bg--4: #fefcf7;
+  --button__bg--5: gray;
+  --hover__txt--6: #66d2cf;
+}
 
 :root {
   --tel__border--1: #ccc;
@@ -11,38 +19,109 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  form {
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid var(--tel__border--1);
+    border-radius: 6px;
+    padding: 30px;
+    background-color: var(--form__bg--1);
+
+    .base_link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      font-weight: bolder;
+      font-size: 1.7rem;
+      font-family: var(--fraunces-font);
+      color: var(--base_link__txt--2);
+      img {
+        width: 24px;
+      }
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--label__txt--3);
+      font-weight: 700;
+      font-family: var(--barlow-font);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid var(--tel__border--1);
+      border-radius: 4px;
+      background-color: var(--tel__bg--4);
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    button {
+      background: var(--primary-btn);
+      color: var(--body);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+
+      &:hover {
+        background-color: var(--primary-btn-hover);
+      }
+    }
+    button:disabled {
+      background-color: var(--button__bg--5);
+      cursor: not-allowed;
+    }
+  }
 }
 
-form {
-  max-width: 400px;
+footer {
+  position: fixed;
+  bottom: 0;
   width: 100%;
-}
+  background-color: var(--tel__bg--4);
+  color: var(--label__txt--3);
+  text-align: center;
+  padding: 10px 0;
+  font-family: var(--barlow-font);
 
-label {
-  display: block;
-  margin-bottom: 5px;
-}
+  p,
+  ul {
+    display: inline-block;
+    margin: 0;
+  }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid var(--tel__border--1);
-  border-radius: 4px;
-}
+  .footer-list {
+    padding: 0;
+    list-style-type: none;
+    margin-left: 20px;
 
-button {
-  background: var(--primary-btn);
-  color: var(--body);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+    li {
+      display: inline-block;
+      margin-right: 10px;
 
-button:hover {
-  background: var(--primary-btn-hover);
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: var(--hover__txt--6);
+        }
+      }
+    }
+  }
 }
-/* test */ /* test */
