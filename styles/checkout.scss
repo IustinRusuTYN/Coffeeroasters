@@ -6,6 +6,7 @@
   --tel__bg--4: #fefcf7;
   --button__bg--5: gray;
   --hover__txt--6: #66d2cf;
+  --hover__txt--1: #fdd6ba;
 }
 
 :root {
@@ -27,6 +28,15 @@ body {
     border-radius: 6px;
     padding: 30px;
     background-color: var(--form__bg--1);
+
+    a {
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: var(--hover__txt--1);
+      }
+    }
 
     .base_link {
       display: flex;
@@ -54,6 +64,7 @@ body {
     input[type="email"],
     input[type="tel"] {
       width: 100%;
+      font-size: 14px;
       padding: 8px;
       margin-bottom: 10px;
       border: 1px solid var(--tel__border--1);

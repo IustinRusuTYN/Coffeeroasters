@@ -14,18 +14,55 @@
     <div class="login-page">
       <div class="form">
         <form class="register-form">
-          <input type="text" placeholder="name" />
-          <input type="password" placeholder="password" />
+          <a href="index.html" class="base_link">
+            <img loading="lazy" src="./images/logo.png" alt="logo" />
+            coffeeroaster
+          </a>
+          <input type="text" placeholder="username" minlength="3" required />
+          <input
+            type="password"
+            placeholder="password"
+            minlength="8"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Re-type password"
+            minlength="8"
+            required
+          />
           <input type="text" placeholder="email address" />
-          <button>create</button>
+          <input type="text" placeholder="country" />
+          <button disabled>create</button>
+          <label>
+            <input type="checkbox" name="terms" />
+            I agree with terms and conditions
+          </label>
+          <label>
+            <input type="checkbox" name="newsletter" />
+            I want to receive the newsletter
+          </label>
           <p class="message">
             Already registered? <a href="../Pages/signin.html">Sign In</a>
           </p>
         </form>
         <form class="login-form">
-          <input type="text" placeholder="username" />
-          <input type="password" placeholder="password" />
-          <button>login</button>
+          <a href="index.html" class="base_link">
+            <img loading="lazy" src="./images/logo.png" alt="logo" />
+            coffeeroaster
+          </a>
+          <input type="text" placeholder="username" minlength="3" required />
+          <input
+            type="password"
+            placeholder="password (At least 8 characters)"
+            minlength="8"
+            required
+          />
+          <button disabled>login</button>
+          <label>
+            <input type="checkbox" name="remember-me" />
+            Remember me
+          </label>
           <p class="message">
             Not registered?
             <a id="create-account-link" href="#">Create an account</a>
