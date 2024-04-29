@@ -1,6 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
   const dropdowns = document.querySelectorAll(".dropdown");
   const navsLi = document.querySelectorAll(".navs li");
+  const button = document.getElementById("create");
+
+  function verificaConditii() {
+    const dropdownsCompleted = Array.from(dropdowns).every(function (dropdown) {
+      return dropdown.nextElementSibling.style.display === "block";
+    });
+
+    if (dropdownsCompleted) {
+      const alteConditiiIndeplinite = true;
+
+      if (alteConditiiIndeplinite) {
+        button.disabled = false;
+      } else {
+        button.disabled = true;
+      }
+    } else {
+      button.disabled = true;
+    }
+  }
 
   dropdowns.forEach(function (dropdown) {
     dropdown.addEventListener("click", function () {
@@ -8,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
       dropdownContent.style.display =
         dropdownContent.style.display === "block" ? "none" : "block";
       this.children[1].classList.toggle("rotate");
+
+      verificaConditii();
     });
   });
 

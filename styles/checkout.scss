@@ -76,6 +76,11 @@ body {
       margin-right: 5px;
     }
 
+    select {
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
     button {
       background: var(--primary-btn);
       color: var(--body);

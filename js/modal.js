@@ -21,6 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  const redirectButtons = document.querySelectorAll(".sub-action");
+  redirectButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      window.location.href = "subscribe.html";
+    });
+  });
+
   document.addEventListener("click", (event) => {
     if (event.target.classList.contains("action")) {
       modal.style.display = "block";

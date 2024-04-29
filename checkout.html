@@ -24,6 +24,7 @@
         required
         placeholder="Enter your first name"
         maxlength="35"
+        autocomplete="given-name"
       />
 
       <label for="last-name">Last Name:</label>
@@ -34,6 +35,7 @@
         required
         placeholder="Enter your last name"
         maxlength="35"
+        autocomplete="family-name"
       />
 
       <label for="email">Email:</label>
@@ -44,6 +46,7 @@
         required
         placeholder="Enter your email address"
         maxlength="35"
+        autocomplete="email"
       />
 
       <label for="city">City:</label>
@@ -64,6 +67,7 @@
         required
         placeholder="Enter your address"
         maxlength="35"
+        autocomplete="street-address"
       />
 
       <label for="phone">Phone:</label>
@@ -76,7 +80,17 @@
         pattern="[0-9]+"
         title="Please enter only digits (0-9)"
         maxlength="40"
+        autocomplete="tel"
       />
+
+      <label for="coffee-type">Type of Coffee: </label>
+      <select id="coffee-type" name="coffee-type">
+        <option value="product1">Gran Espresso</option>
+        <option value="product2">Planalto</option>
+        <option value="product3">Piccollo</option>
+        <option value="product4">Danache</option>
+        <option value="product5">Coming Soon</option>
+      </select>
 
       <label>
         <input type="checkbox" name="shipping-same-as-billing" />

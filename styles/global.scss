@@ -232,7 +232,32 @@ nav {
   &:hover {
     background-color: var(--primary-btn-hover);
   }
+  &:disabled {
+    background-color: #979797;
+    cursor: not-allowed;
+  }
 }
+
+.sub-action {
+  background: var(--primary-btn);
+  font-family: var(--fraunces-font);
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: var(--action__txt--8);
+  border: none;
+  outline: none;
+  padding: 15px 26px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s all;
+  &:hover {
+    background-color: var(--primary-btn-hover);
+  }
+}
+
 .footer {
   background: var(--footer__bg--9);
   padding: 1rem 2rem;
